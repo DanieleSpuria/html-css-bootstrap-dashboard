@@ -26,6 +26,10 @@
   background-color: #1b72e8;
 }
 
+.ds-new{
+  background-color: yellow;
+}
+
 .ds-card{
   border: 1px solid black;
 }
