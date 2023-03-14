@@ -1,0 +1,14 @@
+.ds-debug{
+  background-color: rgba(100, 148, 237, 0.375);
+  border: 1px solid black;
+  height: 300px;
+}
+
+/* .ds-left{
+  width: 80px;
+  height: calc(100vh - 56px);
+}
+
+.ds-top{
+  width: calc();
+} */
