@@ -13,6 +13,15 @@
   height: calc(100vh - 56px);
 }
 
+.ds-h2{
+  display: inline-block;
+}
+
+.ds-top{
+  background-color: #1b72e8;
+}
+
+
 @media screen and (min-width: 991px){
   .ds-left{
     width: 160px;;
