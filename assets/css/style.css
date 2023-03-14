@@ -45,4 +45,7 @@
   .ds-left{
     width: 160px;;
   }
+  .ds-offcanvas{
+    width: 50vw !important;
+  }
 }
