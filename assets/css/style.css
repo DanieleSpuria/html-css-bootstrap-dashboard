@@ -6,7 +6,12 @@
 
 .ds-left{
   width: 80px;
+  color: white;
   background-color: #051e34;
+}
+
+.ds-left-top{
+  height: calc(100% - 24px);
 }
 
 .ds-right{
