@@ -1,3 +1,7 @@
+
+
+
+
 /* NAVBAR */
 .ds-navbar{
   height: 80px;
@@ -27,7 +31,6 @@
   color: #ff8f00;
 }
 /* /NAVBAR */
-
 
 
 
@@ -69,14 +72,31 @@
 /* right-top */
 .ds-right{
   height: calc(100vh - 80x);
+  color: white;
+}
+
+.ds-top{
+  background-color: #1b72e8;
 }
 
 .ds-h2{
   display: inline-block;
 }
 
-.ds-top{
-  background-color: #1b72e8;
+.ds-span{
+  padding: 3px 8px;
+  font-size: 12px;
+  border-radius: 12px;
+  background-color: #165bba;
+  cursor: pointer;
+}
+
+.ds-top-right{
+  line-height: 38px;
+}
+
+.ds-offcanvas{
+  color: black;
 }
 /* /right-top */
 

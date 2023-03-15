@@ -21,11 +21,11 @@
     <div class="container-fluid d-flex align-items-center h-100">
       <img src="assets/img/logo.svg" alt="LOGO" class="d-none  d-lg-block m-2">
       <img src="assets/img/mobile-logo.png" alt="LOGO-SMALL" class="d-lg-none ds-logo m-2">
-      <input class="form-control ds-placeholder m-2 w-100 " type="search" placeholder="&#128269; Prova a cercare: Lezioni di Laravel">
+      <input class="form-control ds-placeholder m-2" type="search" placeholder="&#128269; Prova a cercare: Lezioni di Laravel">
       <i class="fa-solid fa-list ds-color d-none d-lg-inline-block m-2"></i>
       <i class="fa-solid fa-question d-none d-lg-flex justify-content-center align-items-center rounded-circle ds-question m-2"></i>
       <i class="fa-solid fa-ellipsis-vertical ds-color d-none d-lg-inline-block m-2"></i>
-      <i class="fa-solid fa-bell m-2 ds-bell"></i>  
+      <i class="fa-solid fa-bell ds-bell m-2"></i>  
     </div>
   </nav>
   <!-- /NAVBAR --> 
@@ -38,6 +38,8 @@
 
         <!-- DS_LEFT -->
         <div class="ds-left text-center fs-6 p-4">
+
+          <!-- TOP -->
           <div class="ds-left-top">
             <div class="d-flex ds-option-pointer-hover p-2">
               <div class="ds-option me-2">
@@ -60,13 +62,19 @@
               <span class="d-none d-lg-block">Signals</span>
             </div>
           </div>
+          <!-- /TOP -->
           
+
+
+          <!-- BOTTOM -->
           <div class="d-flex ds-option-pointer-hover p-2">
             <div class="ds-option me-2">
               <i class="fa-solid fa-gear"></i>
             </div>
             <span class="d-none d-lg-block">Admin</span>
           </div>
+          <!-- /BOTTOM -->
+
         </div>
         <!-- /DS_LEFT -->
 
@@ -78,57 +86,59 @@
               <!-- RIGHT_TOP -->
               <div class="ds-top">
                 <div class="container-fluid">
-                  <div class="row row-cols-1 row-cols-sm-3">
+                  <div class="row row-cols-1 row-cols-sm-3 py-3">
 
-                      <!-- LEFT -->
-                      <div class="col order-1 order-sm-0">
+                    <!-- LEFT -->
+                    <div class="col order-1 order-sm-0">
                         <h2 class="ds-h2">Boolean</h2>
-                        <span>Piano Blaze</span> <br>
-                        <span>3 app</span>
+                        <span class="ds-span">Piano Blaze</span> <br>
+                        <span class="ds-span">3 app</span>
                         <div class="d-inline-block">>></div>
-                        <span class="d-none d-lg-inline-block">1</span>
-                        <span class="d-none d-lg-inline-block">2</span>
-                        <span class="d-none d-lg-inline-block">3</span>
-                        <div class="d-inline-block d-lg-none">+</div>
-                      </div>
-                      <!-- /LEFT -->
+                        <span class="d-none d-lg-inline-block ds-span">Boolean mobile app</span>
+                        <span class="d-none d-lg-inline-block ds-span">Boolean web app</span>
+                        <span class="d-none d-lg-inline-block ds-span">Boolean blog app</span>
+                        <div class="d-inline-block d-lg-none ds-span">+</div>
+                    </div>
+                    <!-- /LEFT -->
 
 
-                      <!-- CENTER -->
-                      <div class="col d-flex flex-column order-2 order-sm-1">
-                        <span>txt</span>
-                        <span>nmb</span>
-                      </div>
-                      <!-- /CENTER -->
+
+                    <!-- CENTER -->
+                    <div class="col d-flex flex-column order-2 order-sm-1">
+                        <span>Student online negli ultimi 30 minuti</span>
+                        <span class="fs-2 mt-1">125</span>
+                    </div>
+                    <!-- /CENTER -->
                       
 
-                      <!-- RIGHT -->
-                      <div class="col order-0 order-sm-2">
-                        <span>txt</span>
-                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+
+                    <!-- RIGHT -->
+                    <div class="col order-0 order-sm-2 text-end">
+                        <span class="ds-top-right">Nuovo Studente</span>
+                        <button class="btn btn-primary border fs-6 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                           +
                         </button>
                         
                         <!-- OFFCANVAS -->
-                        <div class="offcanvas ds-offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                          <div class="container-fluid">
+                        <div class="offcanvas ds-offcanvas offcanvas-end  text-start w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                          <div class="container-fluid py-3">
                             <div class="d-flex justify-content-between">
-                              <h3>Inserisci un nuovo studente</h3>
+                              <span class="fs-6 mb-3">Inserisci un nuovo studente</span>
                               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
 
                             <div class="row row-cols-1 row-cols-sm-2">
-                              <div class="col">
+                              <div class="col my-2">
                                 <label for="nome" class="form-label">Nome</label>
                                 <input type="text" class="form-control" id="nome">
                               </div>
 
-                              <div class="col">
+                              <div class="col my-2">
                                 <label for="cognome" class="form-label">Cognome</label>
                                 <input type="text" class="form-control" id="cognome">
                               </div>
 
-                              <div class="col">
+                              <div class="col my-2">
                                 <label for="email" class="form-label">Email</label>
                                 <div class="input-group mb-3">
                                   <span class="input-group-text" id="basic-addon1">@</span>
@@ -136,26 +146,26 @@
                                 </div> 
                               </div>
 
-                              <div class="col">
+                              <div class="col my-2">
                                 <label for="password" class="form-label">Password</label>
                                 <input type="password" class="form-control" id="password">
                               </div>
                             </div>
                             
                             <div class="row">
-                              <div class="col">
+                              <div class="col my-2">
                                 <label for="indirizzo" class="form-label">Indirizzo</label>
                                 <input type="text" class="form-control" id="indirizzo">
                               </div>
                             </div>
 
                             <div class="row row-cols-1 row-cols-sm-3">
-                              <div class="col">
+                              <div class="col my-2">
                                 <label for="città" class="form-label">Città</label>
                                 <input type="text" class="form-control" id="città">
                               </div>
 
-                              <div class="col">
+                              <div class="col my-2">
                                 <label for="stato" class="form-label">Stato</label>
                                 <select class="form-select" aria-label="Default select example">
                                   <option selected>Scegli</option>
@@ -165,14 +175,14 @@
                                 </select>  
                               </div>
 
-                              <div class="col">
+                              <div class="col my-2">
                                 <label for="cap" class="form-label">CAP</label>
                                 <input type="number" class="form-control" id="cap">
                               </div>
                             </div>
 
                             <div class="row">
-                              <div class="col">
+                              <div class="col my-2">
                                 <div class="mb-3">
                                   <label for="foto" class="form-label">Foto</label>
                                   <input class="form-control" type="file" id="foto">
@@ -180,16 +190,18 @@
                               </div>
                             </div>
 
-                            <input class="form-check-input mt-0" type="checkbox" value="">
-                            <span>Seleziona per proseguire</span> <br>
-
-                            <button>btn</button>
-                            <button>btn</button>
+                            <div class="mb-2">
+                              <input class="form-check-input" type="checkbox" value="">
+                              <span>Seleziona per proseguire</span> <br>
+                            </div>
+                            
+                            <button type="button" class="btn btn-primary mt-2">Salva</button>
+                            <button type="button" class="btn btn-warning mt-2">Svuota</button>
                           </div>
                         </div>
                         <!-- /OFFCANVAS -->
-                      </div>
-                      <!-- /RIGHT -->
+                    </div>
+                    <!-- /RIGHT -->
 
                   </div>   
                 </div>
@@ -203,6 +215,7 @@
                 <div class="container-fluid">
                   <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col">
+
     <!---------------- PROSSIME CLASSI ---------------->
                       <div class="ds-card">
                           <h2>Prossime classi</h2>
@@ -251,6 +264,7 @@
     <!---------------- /PROSSIME CLASSI --------------->
 
 
+
     <!---------------- F.A.Q. -------------------------->
                         <div class="ds-card">
                             <h2>F.A.Q.</h2>
@@ -289,9 +303,11 @@
                             </div>
                         </div>
     <!---------------- /F.A.Q. ------------------------->
+
                     </div>
 
                     <div class="col">
+
     <!----------------- TODO --------------------------->
                       <div class="ds-card">
                           <h2>Todo</h2>
@@ -341,11 +357,11 @@
                             </li>
                           </ul>
                       </div>               
-  <!---------------- /STATISTICA ---------------------> 
+    <!---------------- /STATISTICA ---------------------> 
+
                     </div>          
                   </div>
-                </div>
-                
+                </div> 
               </div>
               <!-- /RIGHT_BOTTOM -->
           
