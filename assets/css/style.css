@@ -1,8 +1,36 @@
-.ds-debug{
-  background-color: rgba(100, 148, 237, 0.375);
-  border: 1px solid black;
-  height: 300px;
+/* NAVBAR */
+.ds-navbar{
+  height: 80px;
 }
+
+.ds-logo{
+  width: 45px;
+}
+
+.ds-color{
+  color: #595b58;
+}
+
+.ds-question{
+  width: 19px;
+  height: 19px;
+  font-size: 12px;
+  color: white;
+  background-color: #595b58;
+}
+
+.ds-bell{
+  color: #ff8f00;
+}
+/* /NAVBAR */
+
+
+
+.ds-main{
+  height: calc(100vh - 80px);
+}
+
+
 
 .ds-left{
   width: 80px;
@@ -14,8 +42,11 @@
   height: calc(100% - 24px);
 }
 
+
+
+
 .ds-right{
-  height: calc(100vh - 56px);
+  height: calc(100vh - 80x);
 }
 
 .ds-h2{
@@ -34,11 +65,31 @@
   border: 1px solid black;
 }
 
+.ds-none-px{
+  height: 49px;
+}
 
+.ds-table-row{
+  width: 32px;
+}
+
+.ds-table-circle{
+  width: 32px;
+  height: 32px;
+  color: white;
+  background-color: #f26551;
+}
+
+.ds-table-width{
+  width: 110px;
+}
 
 .ds-list{
   border: 1px solid black;
 }
+
+
+
 
 
 @media screen and (min-width: 991px){

@@ -15,38 +15,34 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <img src="" alt="LOGO" class="d-none  d-lg-block">
-      <img src="" alt="LOGO-SMALL" class="d-lg-none">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">1</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">2</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">3</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">4</a>
-          </li>
-        </ul>        
-      </div>
+  <!-- NAVBAR -->
+  <nav class="ds-navbar">
+    <div class="container-fluid d-flex align-items-center h-100">
+      <img src="assets/img/logo.svg" alt="LOGO" class="d-none  d-lg-block m-2">
+      <img src="assets/img/mobile-logo.png" alt="LOGO-SMALL" class="d-lg-none ds-logo m-2">
+      <input class="form-control me-2 w-100" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+      <a class="d-none d-lg-inline-block m-2" href="#">
+        <i class="fa-solid fa-list ds-color"></i>
+      </a>
+      <a class="d-none d-lg-inline-block m-2" href="#">
+        <i class="fa-solid fa-question ds-question d-flex justify-content-center align-items-center rounded-circle"></i>
+      </a>
+      <a class="d-none d-lg-inline-block m-2" href="#">
+        <i class="fa-solid fa-ellipsis-vertical ds-color"></i>
+      </a>
+      <a class="m-2 ds-bell" href="#">
+        <i class="fa-solid fa-bell"></i>
+      </a>   
     </div>
   </nav>
+  <!-- /NAVBAR --> 
 
 
-  <main class="d-flex">
+
+  <!-- MAIN -->
+  <main class="d-flex ds-main">
+
+        <!-- DS_LEFT -->
         <div class="ds-left">
           <div class="ds-left-top">
             <div class="ds-option d-flex justify-content-center">
@@ -70,10 +66,15 @@
             <span class="d-none d-lg-block">txt</span>
           </div>
         </div>
+        <!-- /DS_LEFT -->
 
+
+        <!-- DS_RIGHT -->
         <div class="ds-right overflow-scroll w-100">
           <div class="container-fluid">
             <div class="row row-cols-1">
+
+              <!-- RIGHT_TOP -->
               <div class="col ds-top">
                 <div class="container-fluid">
                   <div class="row row-cols-1 row-cols-sm-3">
@@ -181,7 +182,10 @@
                   </div>   
                 </div>
               </div>
+              <!-- /RIGHT_TOP -->
 
+              
+              <!-- RIGHT_BOTTOM -->
               <div class="col ds-bottom">
                 <div class="row row-cols-1 row-cols-lg-2">
                   <div class="col">
@@ -189,51 +193,46 @@
                     <div class="ds-card">
                         <h2>Prossime classi</h2>
 
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th scope="col">Nome</th>
-                              <th scope="col">Data inizio</th>
-                              <th scope="col">ROI</th>
-                              <th scope="col">Stato</th>
-                              <th scope="col">Azioni</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row">icon</th>
-                              <td>Classe 75</td>
-                              <td>15 Feb 2021</td>
-                              <td>20%</td>
-                              <td>Done</td>
-                              <td>Icon</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">icon</th>
-                              <td>Classe 75</td>
-                              <td>15 Feb 2021</td>
-                              <td>20%</td>
-                              <td>Done</td>
-                              <td>Icon</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">icon</th>
-                              <td>Classe 75</td>
-                              <td>15 Feb 2021</td>
-                              <td>20%</td>
-                              <td>Done</td>
-                              <td>Icon</td>
-                            </tr>
-                            <tr>
-                              <th scope="row">icon</th>
-                              <td>Classe 75</td>
-                              <td>15 Feb 2021</td>
-                              <td>20%</td>
-                              <td>Done</td>
-                              <td>Icon</td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <div class="table-responsive-sm">
+                          <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">Nome</th>
+                                <th class="">&nbsp;</th>
+                                <th scope="col" class="d-none d-sm-inline-block ds-table-width">Data inizio</th>
+                                <th scope="col" class="d-none d-sm-inline-block ds-table-width">ROI</th>
+                                <th scope="col" class="ds-table-width">Stato</th>
+                                <th scope="col" class="ds-table-width">Azioni</th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              <tr>
+                                <th scope="row" class="ds-table-row"> 
+                                  <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-"></i> 
+                                </th>
+                                <td>Classe 75</td>
+                                <td class="d-none d-sm-inline-block ds-none-px">15 Feb 2021</td>
+                                <td class="d-none d-sm-inline-block ds-none-px">20%</td>
+                                <td>Done</td>
+                                <td>Icon</td>
+                              </tr>
+
+                              <tr>
+                                <th scope="row "> 
+                                  <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-"></i> 
+                                </th>
+                                <td>Classe 75</td>
+                                <td class="d-none d-sm-inline-block ds-none-px">15 Feb 2021</td>
+                                <td class="d-none d-sm-inline-block ds-none-px">20%</td>
+                                <td>Done</td>
+                                <td>Icon</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                        
                     </div>
   <!---------------- /PROSSIME CLASSI --------------->
 
@@ -332,14 +331,15 @@
                   </div>          
                 </div>
               </div>
+              <!-- /RIGHT_BOTTOM -->
             </div>
           </div>
           
 
         </div>
-
-
+        <!-- /DS_RIGHT -->
   </main>
+  <!-- /MAIN -->
 
 
 
