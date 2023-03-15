@@ -11,6 +11,10 @@
   color: #595b58;
 }
 
+.ds-placeholder::placeholder{
+  background-color: #e5e5e5;
+}
+
 .ds-question{
   width: 19px;
   height: 19px;
@@ -25,10 +29,13 @@
 /* /NAVBAR */
 
 
+
+
 /* MAIN */
 .ds-main{
   height: calc(100vh - 80px);
 }
+
 
 
 /* left */
@@ -48,6 +55,7 @@
 
 .ds-option-pointer-hover{
   cursor: pointer;
+  transition: all .3s;
 }
 
 .ds-option-pointer-hover:hover{
@@ -58,6 +66,7 @@
 
 
 
+/* right-top */
 .ds-right{
   height: calc(100vh - 80x);
 }
@@ -69,11 +78,11 @@
 .ds-top{
   background-color: #1b72e8;
 }
+/* /right-top */
 
-.ds-new{
-  background-color: yellow;
-}
 
+
+/* right-bottom */
 .ds-card{
   border: 1px solid black;
 }
@@ -100,6 +109,8 @@
 .ds-list{
   border: 1px solid black;
 }
+/* /right-bottom */
+
 /* /MAIN */
 
 

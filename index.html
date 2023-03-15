@@ -15,27 +15,21 @@
 </head>
 <body>
 
+
   <!-- NAVBAR -->
   <nav class="ds-navbar">
     <div class="container-fluid d-flex align-items-center h-100">
       <img src="assets/img/logo.svg" alt="LOGO" class="d-none  d-lg-block m-2">
       <img src="assets/img/mobile-logo.png" alt="LOGO-SMALL" class="d-lg-none ds-logo m-2">
-      <input class="form-control me-2 w-100" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-      <a class="d-none d-lg-inline-block m-2" href="#">
-        <i class="fa-solid fa-list ds-color"></i>
-      </a>
-      <a class="d-none d-lg-inline-block m-2" href="#">
-        <i class="fa-solid fa-question ds-question d-flex justify-content-center align-items-center rounded-circle"></i>
-      </a>
-      <a class="d-none d-lg-inline-block m-2" href="#">
-        <i class="fa-solid fa-ellipsis-vertical ds-color"></i>
-      </a>
-      <a class="m-2 ds-bell" href="#">
-        <i class="fa-solid fa-bell"></i>
-      </a>   
+      <input class="form-control ds-placeholder m-2 w-100 " type="search" placeholder="&#128269; Prova a cercare: Lezioni di Laravel">
+      <i class="fa-solid fa-list ds-color d-none d-lg-inline-block m-2"></i>
+      <i class="fa-solid fa-question d-none d-lg-flex justify-content-center align-items-center rounded-circle ds-question m-2"></i>
+      <i class="fa-solid fa-ellipsis-vertical ds-color d-none d-lg-inline-block m-2"></i>
+      <i class="fa-solid fa-bell m-2 ds-bell"></i>  
     </div>
   </nav>
   <!-- /NAVBAR --> 
+
 
 
 
@@ -43,7 +37,7 @@
   <main class="d-flex ds-main">
 
         <!-- DS_LEFT -->
-        <div class="ds-left text-center p-4">
+        <div class="ds-left text-center fs-6 p-4">
           <div class="ds-left-top">
             <div class="d-flex ds-option-pointer-hover p-2">
               <div class="ds-option me-2">
@@ -77,15 +71,16 @@
         <!-- /DS_LEFT -->
 
 
+
         <!-- DS_RIGHT -->
         <div class="ds-right overflow-scroll w-100">
-          <div class="container-fluid">
-            <div class="row row-cols-1">
 
               <!-- RIGHT_TOP -->
-              <div class="col ds-top">
+              <div class="ds-top">
                 <div class="container-fluid">
                   <div class="row row-cols-1 row-cols-sm-3">
+
+                      <!-- LEFT -->
                       <div class="col order-1 order-sm-0">
                         <h2 class="ds-h2">Boolean</h2>
                         <span>Piano Blaze</span> <br>
@@ -96,19 +91,25 @@
                         <span class="d-none d-lg-inline-block">3</span>
                         <div class="d-inline-block d-lg-none">+</div>
                       </div>
+                      <!-- /LEFT -->
 
+
+                      <!-- CENTER -->
                       <div class="col d-flex flex-column order-2 order-sm-1">
                         <span>txt</span>
                         <span>nmb</span>
                       </div>
+                      <!-- /CENTER -->
                       
+
+                      <!-- RIGHT -->
                       <div class="col order-0 order-sm-2">
                         <span>txt</span>
-
                         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                           +
                         </button>
                         
+                        <!-- OFFCANVAS -->
                         <div class="offcanvas ds-offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                           <div class="container-fluid">
                             <div class="d-flex justify-content-between">
@@ -186,164 +187,168 @@
                             <button>btn</button>
                           </div>
                         </div>
+                        <!-- /OFFCANVAS -->
                       </div>
+                      <!-- /RIGHT -->
+
                   </div>   
                 </div>
               </div>
               <!-- /RIGHT_TOP -->
 
               
+
               <!-- RIGHT_BOTTOM -->
-              <div class="col ds-bottom">
-                <div class="row row-cols-1 row-cols-lg-2">
-                  <div class="col">
-  <!---------------- PROSSIME CLASSI ---------------->
-                    <div class="ds-card">
-                        <h2>Prossime classi</h2>
-
-                        <div class="table-responsive-sm">
-                          <table class="table table-hover">
-                            <thead>
-                              <tr>
-                                <th scope="col">Nome</th>
-                                <th class="">&nbsp;</th>
-                                <th scope="col" class="d-none d-sm-inline-block ds-table-width">Data inizio</th>
-                                <th scope="col" class="d-none d-sm-inline-block ds-table-width">ROI</th>
-                                <th scope="col" class="ds-table-width">Stato</th>
-                                <th scope="col" class="ds-table-width">Azioni</th>
-                              </tr>
-                            </thead>
-
-                            <tbody>
-                              <tr>
-                                <th scope="row" class="ds-table-row"> 
-                                  <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-"></i> 
-                                </th>
-                                <td>Classe 75</td>
-                                <td class="d-none d-sm-inline-block ds-none-px">15 Feb 2021</td>
-                                <td class="d-none d-sm-inline-block ds-none-px">20%</td>
-                                <td>Done</td>
-                                <td>Icon</td>
-                              </tr>
-
-                              <tr>
-                                <th scope="row "> 
-                                  <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-"></i> 
-                                </th>
-                                <td>Classe 75</td>
-                                <td class="d-none d-sm-inline-block ds-none-px">15 Feb 2021</td>
-                                <td class="d-none d-sm-inline-block ds-none-px">20%</td>
-                                <td>Done</td>
-                                <td>Icon</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-
-                        
-                    </div>
-  <!---------------- /PROSSIME CLASSI --------------->
-
-
-  <!---------------- F.A.Q. -------------------------->
+              <div class="ds-bottom">
+                <div class="container-fluid">
+                  <div class="row row-cols-1 row-cols-lg-2">
+                    <div class="col">
+    <!---------------- PROSSIME CLASSI ---------------->
                       <div class="ds-card">
-                          <h2>F.A.Q.</h2>
+                          <h2>Prossime classi</h2>
 
-                          <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                  Accordion Item #1
-                                </button>
-                              </h2>
-                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                              </div>
-                            </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                  Accordion Item #2
-                                </button>
-                              </h2>
-                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                              </div>
-                            </div>
-                            <div class="accordion-item">
-                              <h2 class="accordion-header" id="flush-headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                  Accordion Item #3
-                                </button>
-                              </h2>
-                              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                              </div>
-                            </div>
+                          <div class="table-responsive-sm">
+                            <table class="table table-hover">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Nome</th>
+                                  <th class="">&nbsp;</th>
+                                  <th scope="col" class="d-none d-sm-inline-block ds-table-width">Data inizio</th>
+                                  <th scope="col" class="d-none d-sm-inline-block ds-table-width">ROI</th>
+                                  <th scope="col" class="ds-table-width">Stato</th>
+                                  <th scope="col" class="ds-table-width">Azioni</th>
+                                </tr>
+                              </thead>
+
+                              <tbody>
+                                <tr>
+                                  <th scope="row" class="ds-table-row"> 
+                                    <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-"></i> 
+                                  </th>
+                                  <td>Classe 75</td>
+                                  <td class="d-none d-sm-inline-block ds-none-px">15 Feb 2021</td>
+                                  <td class="d-none d-sm-inline-block ds-none-px">20%</td>
+                                  <td>Done</td>
+                                  <td>Icon</td>
+                                </tr>
+
+                                <tr>
+                                  <th scope="row "> 
+                                    <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-"></i> 
+                                  </th>
+                                  <td>Classe 75</td>
+                                  <td class="d-none d-sm-inline-block ds-none-px">15 Feb 2021</td>
+                                  <td class="d-none d-sm-inline-block ds-none-px">20%</td>
+                                  <td>Done</td>
+                                  <td>Icon</td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </div>
+
+                          
                       </div>
-  <!---------------- /F.A.Q. ------------------------->
+    <!---------------- /PROSSIME CLASSI --------------->
+
+
+    <!---------------- F.A.Q. -------------------------->
+                        <div class="ds-card">
+                            <h2>F.A.Q.</h2>
+
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Accordion Item #1
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Accordion Item #2
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Accordion Item #3
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+    <!---------------- /F.A.Q. ------------------------->
+                    </div>
+
+                    <div class="col">
+    <!----------------- TODO --------------------------->
+                      <div class="ds-card">
+                          <h2>Todo</h2>
+
+                          <ul class="list-group ds-list">
+                            <li class="list-group-item">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <span>txt</span>
+                            </li>
+
+                            <li class="list-group-item">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <span>txt</span>
+                            </li>
+
+                            <li class="list-group-item">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <span>txt</span>
+                            </li>
+                          </ul> 
+                      </div>                
+    <!----------------- /TODO -------------------------->
+                    
+                    
+                    
+    <!---------------- STATISTICA ---------------------->
+                      <div class="ds-card">
+                          <ul class="list-group ds-list">
+                            <li class="list-group-item">
+                              <img src="" alt="dati">
+                            </li>
+                            <li class="list-group-item">
+                              <h4>Utenti attivi</h4>
+                              <span>Lista degli utenti in piattaforma nell'ultimo mese</span>
+                            </li>
+                            <li class="list-group-item">
+                              Gennaio: 1200
+                            </li>
+                            <li class="list-group-item">
+                              Febbraio: 800
+                            </li>
+                            <li class="list-group-item">
+                              Marzo: 1500
+                            </li>
+                            <li class="list-group-item">
+                              <a href="#">Visualizza report approfondito</a>
+                            </li>
+                          </ul>
+                      </div>               
+  <!---------------- /STATISTICA ---------------------> 
+                    </div>          
                   </div>
-
-                  <div class="col">
-  <!----------------- TODO --------------------------->
-                    <div class="ds-card">
-                        <h2>Todo</h2>
-
-                        <ul class="list-group ds-list">
-                          <li class="list-group-item">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <span>txt</span>
-                          </li>
-
-                          <li class="list-group-item">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <span>txt</span>
-                          </li>
-
-                          <li class="list-group-item">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <span>txt</span>
-                          </li>
-                        </ul> 
-                    </div>                
-  <!----------------- /TODO -------------------------->
-                  
-                  
-                  
-  <!---------------- STATISTICA ---------------------->
-                    <div class="ds-card">
-                        <ul class="list-group ds-list">
-                          <li class="list-group-item">
-                            <img src="" alt="dati">
-                          </li>
-                          <li class="list-group-item">
-                            <h4>Utenti attivi</h4>
-                            <span>Lista degli utenti in piattaforma nell'ultimo mese</span>
-                          </li>
-                          <li class="list-group-item">
-                            Gennaio: 1200
-                          </li>
-                          <li class="list-group-item">
-                            Febbraio: 800
-                          </li>
-                          <li class="list-group-item">
-                            Marzo: 1500
-                          </li>
-                          <li class="list-group-item">
-                            <a href="#">Visualizza report approfondito</a>
-                          </li>
-                        </ul>
-                    </div>               
-<!---------------- /STATISTICA ---------------------> 
-                  </div>          
                 </div>
+                
               </div>
               <!-- /RIGHT_BOTTOM -->
-            </div>
-          </div>
           
-
         </div>
         <!-- /DS_RIGHT -->
   </main>
@@ -352,7 +357,10 @@
 
 
 
-
+  <!-- BOOTSTRAP_JS -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.js' integrity='sha512-L6XANV6sOsx9N9c787eDN1pjB2Pzautd3xDgn4cMKuoleHSuCJi5pCDGPCtwE3Bd4A1Olnr0k0aQXbczYzg+wg==' crossorigin='anonymous'></script>
+  <!-- /BOOTSTRAP_JS -->
+
+
 </body>
 </html>
