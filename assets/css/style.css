@@ -116,12 +116,12 @@
   border-bottom: #d2d2d2 2px solid;
 }
 
-.ds-none-px{
-  height: 49px;
+.ds-first{
+  width: 32px;
 }
 
-.ds-table-row{
-  width: 32px;
+td:not(:nth-child(2)){
+  width: 120px;
 }
 
 .ds-table-circle{
@@ -131,12 +131,30 @@
   background-color: #f26551;
 }
 
-.ds-table-width{
-  width: 110px;
-}
-
 .ds-list{
   padding: 15px;
+}
+
+.ds-stato{
+  padding: 2px 8px;
+  font-size: 14px;
+  color: white;
+}
+.ds-done{
+background-color: #198754;
+}
+
+.ds-process{
+  background-color: #ffc108;
+}
+
+.ds-failed{
+  background-color: #dc3444;
+}
+
+.ds-list-i{
+  color: #6c757d;
+  border: #6c757d 2px solid;
 }
 /* /right-bottom */
 

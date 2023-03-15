@@ -113,7 +113,7 @@
 
 
                     <!-- RIGHT -->
-                    <div class="col order-0 order-sm-2 text-end">
+                    <div class="col order-0 order-sm-2 text-start text-sm-end">
                         <span class="ds-top-right">Nuovo Studente</span>
                         <button class="btn btn-primary border fs-6 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                           +
@@ -220,41 +220,148 @@
                       <div class="ds-card my-4">
                           <h2 class="pt-2 pb-3 ps-4 mb-0 ds-h2-bottom">Prossime classi</h2>
 
-                          <div class="table-responsive-sm">
+                          <div class="table p-3">
                             <table class="table table-hover">
                               <thead>
                                 <tr>
                                   <th scope="col">Nome</th>
                                   <th class="">&nbsp;</th>
-                                  <th scope="col" class="d-none d-sm-inline-block ds-table-width">Data inizio</th>
-                                  <th scope="col" class="d-none d-sm-inline-block ds-table-width">ROI</th>
-                                  <th scope="col" class="ds-table-width">Stato</th>
-                                  <th scope="col" class="ds-table-width">Azioni</th>
+                                  <th scope="col" class="d-none d-sm-table-cell text-center">Data inizio</th>
+                                  <th scope="col" class="d-none d-sm-table-cell text-center">ROI</th>
+                                  <th scope="col" class="text-center">Stato</th>
+                                  <th scope="col" class="text-center">Azioni</th>
                                 </tr>
                               </thead>
 
                               <tbody>
-                                <tr>
-                                  <th scope="row" class="ds-table-row"> 
-                                    <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-"></i> 
+                                <tr class="align-middle">
+                                  <th scope="row" class="ds-first"> 
+                                    <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-6"></i> 
                                   </th>
-                                  <td>Classe 75</td>
-                                  <td class="d-none d-sm-inline-block ds-none-px">15 Feb 2021</td>
-                                  <td class="d-none d-sm-inline-block ds-none-px">20%</td>
-                                  <td>Done</td>
-                                  <td>Icon</td>
+                                  <td class="text-start ps-0">Classe 75</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">15 Feb 2021</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">20%</td>
+                                  <td class="text-center ds-width-cell">
+                                    <span class="ds-stato ds-done rounded-3">Done</span>
+                                  </td>
+                                  <td class="text-center ds-width-cell">
+                                    <i class="fa-solid fa-pen ds-list-i p-2 rounded-2 me-1"></i>
+                                    <i class="fa-solid fa-trash ds-list-i p-2 rounded-2"></i>
+                                  </td>
                                 </tr>
 
-                                <tr>
-                                  <th scope="row "> 
-                                    <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-"></i> 
+                                <tr class="align-middle">
+                                  <th scope="row" class="ds-first"> 
+                                    <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-6"></i> 
                                   </th>
-                                  <td>Classe 75</td>
-                                  <td class="d-none d-sm-inline-block ds-none-px">15 Feb 2021</td>
-                                  <td class="d-none d-sm-inline-block ds-none-px">20%</td>
-                                  <td>Done</td>
-                                  <td>Icon</td>
+                                  <td class="text-start ps-0">Classe 76</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">15 Feb 2021</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">20%</td>
+                                  <td class="text-center ds-width-cell">
+                                    <span class="ds-stato ds-done rounded-3">Done</span>
+                                  </td>
+                                  <td class="text-center ds-width-cell">
+                                    <i class="fa-solid fa-pen ds-list-i p-2 rounded-2 me-1"></i>
+                                    <i class="fa-solid fa-trash ds-list-i p-2 rounded-2"></i>
+                                  </td>
                                 </tr>
+
+                                <tr class="align-middle">
+                                  <th scope="row" class="ds-first"> 
+                                    <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-6"></i> 
+                                  </th>
+                                  <td class="text-start ps-0">Classe 77</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">15 Feb 2021</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">20%</td>
+                                  <td class="text-center ds-width-cell">
+                                    <span class="ds-stato ds-process rounded-3">Process</span>
+                                  </td>
+                                  <td class="text-center ds-width-cell">
+                                    <i class="fa-solid fa-pen ds-list-i p-2 rounded-2 me-1"></i>
+                                    <i class="fa-solid fa-trash ds-list-i p-2 rounded-2"></i>
+                                  </td>
+                                </tr>
+
+                                <tr class="align-middle">
+                                  <th scope="row" class="ds-first"> 
+                                    <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-6"></i> 
+                                  </th>
+                                  <td class="text-start ps-0">Classe 78</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">15 Feb 2021</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">20%</td>
+                                  <td class="text-center ds-width-cell">
+                                    <span class="ds-stato ds-done rounded-3">Done</span>
+                                  </td>
+                                  <td class="text-center ds-width-cell">
+                                    <i class="fa-solid fa-pen ds-list-i p-2 rounded-2 me-1"></i>
+                                    <i class="fa-solid fa-trash ds-list-i p-2 rounded-2"></i>
+                                  </td>
+                                </tr>
+
+                                <tr class="align-middle">
+                                  <th scope="row" class="ds-first"> 
+                                    <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-6"></i> 
+                                  </th>
+                                  <td class="text-start ps-0">Classe 79</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">15 Feb 2021</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">20%</td>
+                                  <td class="text-center ds-width-cell">
+                                    <span class="ds-stato ds-failed rounded-3">Failed</span>
+                                  </td>
+                                  <td class="text-center ds-width-cell">
+                                    <i class="fa-solid fa-pen ds-list-i p-2 rounded-2 me-1"></i>
+                                    <i class="fa-solid fa-trash ds-list-i p-2 rounded-2"></i>
+                                  </td>
+                                </tr>
+
+                                <tr class="align-middle">
+                                  <th scope="row" class="ds-first"> 
+                                    <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-6"></i> 
+                                  </th>
+                                  <td class="text-start ps-0">Classe 80</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">15 Feb 2021</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">20%</td>
+                                  <td class="text-center ds-width-cell">
+                                    <span class="ds-stato ds-done rounded-3">Done</span>
+                                  </td>
+                                  <td class="text-center ds-width-cell">
+                                    <i class="fa-solid fa-pen ds-list-i p-2 rounded-2 me-1"></i>
+                                    <i class="fa-solid fa-trash ds-list-i p-2 rounded-2"></i>
+                                  </td>
+                                </tr>
+
+                                <tr class="align-middle">
+                                  <th scope="row" class="ds-first"> 
+                                    <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-6"></i> 
+                                  </th>
+                                  <td class="text-start ps-0">Classe 81</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">15 Feb 2021</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">20%</td>
+                                  <td class="text-center ds-width-cell">
+                                    <span class="ds-stato ds-failed rounded-3">Failed</span>
+                                  </td>
+                                  <td class="text-center ds-width-cell">
+                                    <i class="fa-solid fa-pen ds-list-i p-2 rounded-2 me-1"></i>
+                                    <i class="fa-solid fa-trash ds-list-i p-2 rounded-2"></i>
+                                  </td>
+                                </tr>
+
+                                <tr class="align-middle">
+                                  <th scope="row" class="ds-first"> 
+                                    <i class="fa-solid fa-code ds-table-circle rounded-circle d-flex justify-content-center align-items-center fs-6"></i> 
+                                  </th>
+                                  <td class="text-start ps-0">Classe 82</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">15 Feb 2021</td>
+                                  <td class="d-none d-sm-table-cell text-center ds-width-cell">20%</td>
+                                  <td class="text-center ds-width-cell">
+                                    <span class="ds-stato ds-done rounded-3">Done</span>
+                                  </td>
+                                  <td class="text-center ds-width-cell">
+                                    <i class="fa-solid fa-pen ds-list-i p-2 rounded-2 me-1"></i>
+                                    <i class="fa-solid fa-trash ds-list-i p-2 rounded-2"></i>
+                                  </td>
+                                </tr>
+
                               </tbody>
                             </table>
                           </div>
