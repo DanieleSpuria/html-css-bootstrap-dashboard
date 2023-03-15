@@ -37,6 +37,7 @@
 /* MAIN */
 .ds-main{
   height: calc(100vh - 80px);
+  background-color: #f8f9fa;
 }
 
 
@@ -72,10 +73,10 @@
 /* right-top */
 .ds-right{
   height: calc(100vh - 80x);
-  color: white;
 }
 
 .ds-top{
+  color: white;
   background-color: #1b72e8;
 }
 
@@ -104,7 +105,15 @@
 
 /* right-bottom */
 .ds-card{
-  border: 1px solid black;
+  background-color: white;
+  border: 2px #d2d2d2 solid;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.ds-h2-bottom{
+  background-color: #f7f7f7;
+  border-bottom: #d2d2d2 2px solid;
 }
 
 .ds-none-px{
@@ -127,7 +136,7 @@
 }
 
 .ds-list{
-  border: 1px solid black;
+  padding: 15px;
 }
 /* /right-bottom */
 
