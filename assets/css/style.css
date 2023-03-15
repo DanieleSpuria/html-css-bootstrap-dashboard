@@ -25,13 +25,13 @@
 /* /NAVBAR */
 
 
-
+/* MAIN */
 .ds-main{
   height: calc(100vh - 80px);
 }
 
 
-
+/* left */
 .ds-left{
   width: 80px;
   color: white;
@@ -39,9 +39,22 @@
 }
 
 .ds-left-top{
-  height: calc(100% - 24px);
+  height: calc(100% - 40px);
 }
 
+.ds-option{
+  width: 30px;
+}
+
+.ds-option-pointer-hover{
+  cursor: pointer;
+}
+
+.ds-option-pointer-hover:hover{
+  background-color: gray;
+
+}
+/* /left */
 
 
 
@@ -87,7 +100,7 @@
 .ds-list{
   border: 1px solid black;
 }
-
+/* /MAIN */
 
 
 
